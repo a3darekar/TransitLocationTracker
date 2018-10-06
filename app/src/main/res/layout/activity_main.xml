@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/hello_user"/>
+
+    <Button
+        android:id="@+id/register_route"
+        android:text="@string/register_route"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+    <Button
+        android:id="@+id/start_tracking"
+        android:text="@string/enable_tracking"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/register_route"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+    <Button
+        android:id="@+id/map"
+        android:text="@string/display_map"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/start_tracking"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:text="@string/logout"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+
+</RelativeLayout>

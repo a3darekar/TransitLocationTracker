@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "46114863357",
+    "firebase_url": "https://realtime-locationtracker.firebaseio.com",
+    "project_id": "realtime-locationtracker",
+    "storage_bucket": "realtime-locationtracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46114863357:android:6cd0056c1f4279e7",
+        "android_client_info": {
+          "package_name": "com.acdarekar.transitlocationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46114863357-l1i6p00di0dja9af7nsaa852t0uqiqbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.acdarekar.transitlocationtracker",
+            "certificate_hash": "6637ecc61d5d643b37a84401bd7666e495bdaaa4"
+          }
+        },
+        {
+          "client_id": "46114863357-teibojjkl5ov14i3e38vhmj8dv8tch0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4D2zLbTDnUONPXjaHDTSrOHL4ELnKUOc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46114863357-teibojjkl5ov14i3e38vhmj8dv8tch0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46114863357:android:8f1ca03187688067",
+        "android_client_info": {
+          "package_name": "com.example.codeslave.realtimelocationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46114863357-f81d9v9a5r6b4u2hcgfaq0uovr1olhp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codeslave.realtimelocationtracker",
+            "certificate_hash": "6637ecc61d5d643b37a84401bd7666e495bdaaa4"
+          }
+        },
+        {
+          "client_id": "46114863357-teibojjkl5ov14i3e38vhmj8dv8tch0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4D2zLbTDnUONPXjaHDTSrOHL4ELnKUOc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46114863357-teibojjkl5ov14i3e38vhmj8dv8tch0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
