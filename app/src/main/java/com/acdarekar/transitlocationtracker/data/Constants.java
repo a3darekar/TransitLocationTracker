@@ -1,9 +1,9 @@
-package com.acdarekar.transitlocationtracker;
+package com.acdarekar.transitlocationtracker.data;
 
 import com.google.firebase.auth.FirebaseUser;
 
 public class Constants {
-    static FirebaseUser user;
+    private static FirebaseUser user;
 
     public static FirebaseUser getUser() {
         return user;

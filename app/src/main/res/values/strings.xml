@@ -18,4 +18,7 @@
     <string name="display_map">Display Map</string>
     <string name="logout">Logout</string>
     <string name="hello_user">Hello User</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="tracking_enabled_notif">Tracking Enabled</string>
+    <string name="alertdialog">AlertDialog</string>
 </resources>
