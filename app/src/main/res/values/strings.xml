@@ -21,4 +21,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="tracking_enabled_notif">Tracking Enabled</string>
     <string name="alertdialog">AlertDialog</string>
+    <string name="disable_tracking">Disable Tracking</string>
 </resources>

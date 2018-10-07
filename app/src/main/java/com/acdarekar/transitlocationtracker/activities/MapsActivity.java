@@ -59,23 +59,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         FirebaseUser user = Constants.getUser();
         final double[] latitude = new double[1];
         final double[] longitude = new double[1];
-        DatabaseReference data = FirebaseDatabase.getInstance().getReference("buses").child(user.getUid());
+        final DatabaseReference data = FirebaseDatabase.getInstance().getReference("buses").child(user.getUid()).child("location");
         LatLng sydney = new LatLng(latitude[0], longitude[0]);
-        marker = mMap.addMarker(new MarkerOptions().position(sydney).title("User 1"));
+        //TODO : Add Custom Marker
+        marker = mMap.addMarker(new MarkerOptions().position(sydney).title(Constants.getRoute().getRoute_name()));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         data.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                HashMap location = dataSnapshot.child("location").getValue(HashMap.class);
-                if(location != null) {
-                    try {
-                        JSONObject json = new JSONObject(location);
-                        latitude[0] = Double.parseDouble(json.getString("latitude"));
-                        longitude[0] = Double.parseDouble(json.getString("longitude"));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+                try {
+
+                    latitude[0] = dataSnapshot.child("latitude").getValue(Double.class);
+                    longitude[0] = dataSnapshot.child("longitude").getValue(Double.class);
                     marker.setPosition(new LatLng(latitude[0],longitude[0]));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(latitude[0],longitude[0])));
+                }catch (NullPointerException e){
+                    e.printStackTrace();
                 }
             }
             @Override
